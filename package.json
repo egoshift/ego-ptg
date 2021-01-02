@@ -1,0 +1,22 @@
+{
+  "name": "ego-ptg",
+  "version": "1.0.0",
+  "description": "CSS Painting",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoshift/ego-ptg.git"
+  },
+  "author": "Emmanuel Oriel <emmanguino@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egoshift/ego-ptg/issues"
+  },
+  "homepage": "https://github.com/egoshift/ego-ptg#readme",
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
+  }
+}
