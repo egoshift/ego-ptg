@@ -1,0 +1,50 @@
+---
+permalink: nyanko.html
+---
+
+{% extends "templates/index.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="css/nyanko.css">
+{% endblock styles %}
+
+{% block content %}
+    <section>
+        <div class="canvas">
+            <div class="nyanko-head">
+                <div class="nyanko-ear-left"></div>
+                <div class="nyanko-ear-right"></div>
+                <div class="nyanko-face">
+                    <div class="nyanko-headmark">
+                    <div class="nyanko-headmark-left"></div>
+                    <div class="nyanko-headmark-right"></div>
+                </div>
+                <div class="nyanko-eye-left">
+                    <div class="nyanko-eye-mark nyanko-top-mark mark1"></div>
+                    <div class="nyanko-eye-mark nyanko-top-mark mark2"></div>
+                    <div class="nyanko-eye-mark nyanko-top-mark mark3"></div>
+                    <div class="nyanko-eye"></div>
+                    <div class="nyanko-eye-mark nyanko-bottom-mark mark1"></div>
+                    <div class="nyanko-eye-mark nyanko-bottom-mark mark2"></div>
+                </div>
+                <div class="nyanko-eye-right">
+                    <div class="nyanko-eye-mark nyanko-top-mark mark1"></div>
+                    <div class="nyanko-eye-mark nyanko-top-mark mark2"></div>
+                    <div class="nyanko-eye-mark nyanko-top-mark mark3"></div>
+                    <div class="nyanko-eye"></div>
+                    <div class="nyanko-eye-mark nyanko-bottom-mark mark1"></div>
+                    <div class="nyanko-eye-mark nyanko-bottom-mark mark2"></div>
+                </div>
+                <div class="nyanko-nose">
+                    <div class="nyanko-nose-left"></div>
+                    <div class="nyanko-nose-right"></div>
+                </div>
+                <div class="nyanko-mouth">
+                    <div class="nyanko-mouth-left"></div>
+                    <div class="nyanko-mouth-right"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

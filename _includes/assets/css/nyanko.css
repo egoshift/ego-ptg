@@ -1,0 +1,260 @@
+body {
+    padding: 1rem;
+}
+
+section {
+    background-color: black;
+}
+
+.canvas {
+    margin: 0 auto;
+    width: 500px;
+    padding: 4rem;
+}
+
+.nyanko-head {
+    position: relative;
+    height: 430px;
+}
+.nyanko-face {
+    position: relative;
+    background-color: whitesmoke;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 70% 70% 65% 65% / 85% 85% 62% 62%;
+    z-index: 1;
+}
+.nyanko-headmark {
+    width: 50%;
+    height: 55%;
+    margin: 0 auto;
+    background-color: darkgray;
+    border-radius: 33% 33% 65% 65% / 85% 85% 55% 55%;
+    overflow: hidden;
+}
+.nyanko-headmark-left {
+    width: 50%;
+    height: 100%;
+    background-color: #f9bc61;
+}
+
+/* EARS */
+.nyanko-ear-left {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 300px;
+    top: -20px;
+    left: 10px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 40%;
+    transform: rotate(10deg);
+}
+.nyanko-ear-right {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 300px;
+    top: -20px;
+    right: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 40%;
+    transform: rotate(-10deg);
+}
+
+/* EYE */
+.nyanko-eye-left {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+.nyanko-eye-left .nyanko-eye {
+    height: 10px;
+    width: 130px;
+    border: solid 5px #222;
+    border-color: #222 transparent transparent transparent;
+    border-radius: 50% / 21px 21px 0 0;
+    transform: rotate(13deg);
+}
+.nyanko-eye-right {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+}
+.nyanko-eye-right .nyanko-eye {
+    height: 10px;
+    width: 130px;
+    border: solid 5px #222;
+    border-color: #222 transparent transparent transparent;
+    border-radius: 50% / 21px 21px 0 0;
+    transform: rotate(-13deg);
+}
+
+/* EYE MARK */
+
+.nyanko-eye-mark {
+    border: solid 2px #86222b;
+    position: absolute;
+}
+
+.nyanko-eye-left .nyanko-eye-mark.nyanko-bottom-mark,
+.nyanko-eye-left .nyanko-eye-mark.nyanko-top-mark,
+.nyanko-eye-right .nyanko-eye-mark.nyanko-top-mark,
+.nyanko-eye-right .nyanko-eye-mark.nyanko-bottom-mark {
+    /* background-color: #86222b; */
+    border-left-style: solid;
+    border-left-width: 7px;
+    border-radius: 100%;
+}
+
+/* EYE MARK TOP */
+.nyanko-eye-left .nyanko-top-mark.mark1 {
+    width: 1%;
+    height: 2.3%;
+    top: -15px;
+    left: -1%;
+    border-left-style: solid;
+    transform: scaleY(-1) rotate(-20deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+.nyanko-eye-left .nyanko-top-mark.mark2 {
+    width: 1%;
+    height: 1%;
+    top: -25px;
+    left: 2%;
+    border-left-style: solid;
+    transform: scaleY(-1) rotate(-55deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+.nyanko-eye-left .nyanko-top-mark.mark3 {
+    width: 1%;
+    height: 1%;
+    top: -35px;
+    left: 8%;
+    border-left-style: solid;
+    transform: scaleY(-1) rotate(-90deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+
+.nyanko-eye-right .nyanko-top-mark.mark1 {
+    width: 1%;
+    height: 2.3%;
+    top: -15px;
+    right: -1%;
+    border-right-style: solid;
+    transform: scaleY(-1) scaleX(-1) rotate(-20deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+.nyanko-eye-right .nyanko-top-mark.mark2 {
+    width: 1%;
+    height: 1%;
+    top: -25px;
+    right: 2%;
+    border-right-style: solid;
+    transform: scaleY(-1) scaleX(-1) rotate(-55deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+.nyanko-eye-right .nyanko-top-mark.mark3 {
+    width: 1%;
+    height: 1%;
+    top: -35px;
+    right: 8%;
+    border-right-style: solid;
+    transform: scaleY(-1) scaleX(-1) rotate(-90deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+
+/* EYE MARK BOTTOM */
+
+.nyanko-eye-left .nyanko-bottom-mark.mark1 {
+    width: 6%;
+    height: 2.3%;
+    left: 5%;
+    border-left-style: solid;
+    transform: scaleY(-1) rotate(10deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+.nyanko-eye-left .nyanko-bottom-mark.mark2 {
+    width: 2%;
+    height: 2.3%;
+    bottom: 20%;
+    left: 5%;
+    border-left-style: solid;
+    transform: scaleY(-1) rotate(-5deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+
+.nyanko-eye-right .nyanko-bottom-mark.mark1 {
+    width: 6%;
+    height: 2.3%;
+    right: 5%;
+    border-left-style: solid;
+    transform: scaleX(-1) scaleY(-1) rotate(10deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+.nyanko-eye-right .nyanko-bottom-mark.mark2 {
+    width: 2%;
+    height: 2.3%;
+    bottom: 20%;
+    right: 5%;
+    border-left-style: solid;
+    transform: scaleX(-1) scaleY(-1) rotate(-5deg);
+    border-color: #86222b transparent transparent #86222b;
+}
+
+/* NOSE */
+.nyanko-nose {
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3%;
+    height: 3%;
+}
+.nyanko-nose .nyanko-nose-left {
+    position: absolute;
+    left: -1px;
+    top: 0;
+    border-left: 4px solid #222;
+    height: 100%;
+    width: 50%;
+    transform: rotate(-60deg);
+}
+.nyanko-nose .nyanko-nose-right {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    border-right: 4px solid #222;
+    height: 100%;
+    width: 50%;
+    transform: rotate(60deg);
+}
+
+/* MOUTH */
+.nyanko-mouth {
+    position: absolute;
+    display: flex;
+    width: 11%;
+    height: 3%;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nyanko-mouth .nyanko-mouth-left {
+    width: 50%;
+    border: 4px solid #222;
+    border-color: transparent #222 #222 #222;
+    border-top: none;
+    border-radius: 100% / 0 0 21px 21px;
+    transform: rotate(10deg);
+}
+.nyanko-mouth .nyanko-mouth-right {
+    width: 50%;
+    border: 4px solid #222;
+    border-color: transparent #222 #222 #222;
+    border-top: none;
+    border-radius: 100% / 0 0 21px 21px;
+    transform: rotate(-10deg);
+}
