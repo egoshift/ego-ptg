@@ -3,13 +3,16 @@ body {
 }
 
 section {
-    background-color: black;
+    /* background-color: black; */
+    position: relative;
+    padding: 5rem;
 }
 
-.canvas {
+.nyanko {
     margin: 0 auto;
     width: 500px;
-    padding: 4rem;
+    padding: 5rem;
+    position: relative;
 }
 
 .nyanko-head {
@@ -20,22 +23,27 @@ section {
     position: relative;
     background-color: whitesmoke;
     height: 100%;
-    overflow: hidden;
     border-radius: 70% 70% 65% 65% / 85% 85% 62% 62%;
     z-index: 1;
+    overflow: hidden;
+    border: 4px solid;
 }
 .nyanko-headmark {
-    width: 50%;
-    height: 55%;
+    width: 55%;
+    height: 65%;
     margin: 0 auto;
     background-color: darkgray;
-    border-radius: 33% 33% 65% 65% / 85% 85% 55% 55%;
+    border-radius: 70% 70% 65% 65% / 70% 70% 62% 62%;
+    position: relative;
+    top: -47px;
     overflow: hidden;
+    border: 4px solid;
 }
 .nyanko-headmark-left {
     width: 50%;
     height: 100%;
     background-color: #f9bc61;
+    border-right: 4px solid;
 }
 
 /* EARS */
@@ -50,6 +58,8 @@ section {
     border-top-left-radius: 5%;
     border-bottom-left-radius: 40%;
     transform: rotate(10deg);
+    z-index: 1;
+    border: 4px solid;
 }
 .nyanko-ear-right {
     position: absolute;
@@ -62,6 +72,8 @@ section {
     border-top-right-radius: 5%;
     border-bottom-right-radius: 40%;
     transform: rotate(-10deg);
+    z-index: 1;
+    border: 4px solid;
 }
 
 /* EYE */
@@ -257,4 +269,48 @@ section {
     border-top: none;
     border-radius: 100% / 0 0 21px 21px;
     transform: rotate(-10deg);
+}
+
+.nyanko-body {
+    background-color: whitesmoke;
+    height: 600px;
+    width: 650px;
+    overflow: hidden;
+    border-radius: 75% 75% 65% 65% / 87% 87% 62% 62%;
+    position: relative;
+    z-index: -.5;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid;
+}
+
+.nyanko-bodymark {
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+    background-color: darkgray;
+    border-radius: 75% 75% 65% 65% / 87% 87% 55% 55%;
+    position: relative;
+    top: -15px;
+    overflow: hidden;
+    border: 4px solid;
+}
+.nyanko-bodymark-left {
+    width: 51.5%;
+    height: 100%;
+    background-color: #f9bc61;
+    border-right: 4px solid;
+}
+
+.nyanko-tail {
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid;
 }
